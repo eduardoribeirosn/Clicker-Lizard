@@ -54,186 +54,312 @@ body {
 }
 
 /* Header */
-#idTelaGame #idHeader {
-    background-color: var(--Cor-Fundo_01);
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #idTelaGame #idHeader {
+        background-color: var(--Cor-Fundo_01);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#idTelaGame #idHeader #idTitleGame {
-    font-family: "Inter";
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--Cor-Principal_01);
-}
+    #idTelaGame #idHeader #idTitleGame {
+        font-family: "Inter";
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: var(--Cor-Principal_01);
+    }
 /* Fim Header */
 /* Main */
-#idTelaGame #idMain {
-    width: 100%;
-    height: 720px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Main Top */
-#idMain #idTop {
-    width: 100%;
-    height: 120px;
-}
-
-#idTop .containerTop {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#idTop #idBasicInformation {
-    width: 200px;
-    height: 60px;
-}
-
-#idTop #idBasicInformation .containerBasicInformation {
-    background-color: var(--Cor-Superficies_02);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--Cor-TextoPrincipal);
-    border-radius: .75rem;
-    margin-top: 5px;
-    font-family: "Inter";
-}
-
-#idTop #idBasicInformation #idZengiaAtual {
-    font-size: 1.8rem;
-}
-
-#idTop #idBasicInformation #idZPS {
-    font-size: .8rem;
-}
-/* Fim Main Top */
-
-/* Main Mid */
-#idMain #idMid {
-    width: 100%;
-    height: 480px;
-}
-
-#idMain #idMid .containerMid {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-/* Main Mid Left */
-#idMid #idMidLeft {
-    width: 400px;
-    height: 100%;
-}
-
-#idMid #idMidLeft .containerMidLeft {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* Main Mid Left (MenuBarLeft) */
-#idMidLeft #idMenuBarLeft {
-    width: 60px;
-    height: 300px;
-}
-
-#idMidLeft #idMenuBarLeft .containerMenuBarLeft {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-#idMidLeft #idMenuBarLeft .opcoesMenuBarLeft {
-    background-color: var(--Cor-Superficies_03);
-    width: 100%;
-    height: 60px;
-    border: 3px solid var(--Cor-Superficies_01);
+    #idTelaGame #idMain {
+        width: 100%;
+        height: 720px;
+        display: flex;
+        flex-direction: column;
     }
-/* Fim Main Mid Left (MenuBarLeft) */
-/* ME PERDI DE SONOOOOOOO */
-/* Main Mid Left (MenuBarLeft pt2) */
-#idMidLeft #idMidLeftEnergias #idFecharEnergias {
-    width: 40px;
-    height: 100%;
-}
 
-#idMidLeft #idMidLeftEnergias #idFecharEnergias .containerFecharEnergias {
-    background-color: var(--Cor-Fundo_01);
-}
+    /* Main Top */
+        #idMain #idTop {
+            width: 100%;
+            height: 120px;
+        }
 
-#idMidLeft #idMenuLeftEnergias #idFecharEnergias .iconsFechar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+        #idTop .containerTop {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
-#idMid #idMidLeft  {
-    background-color: white; /* MUDAR O WHITE */
-    width: 100%;
-    height: 100%;
-    margin-top: -20px;
-    background-color: var(--Cor-Fundo_01);
-}
+        #idTop #idBasicInformation {
+            width: 200px;
+            height: 60px;
+        }
 
-/* Fim Main Mid Left (MenuBarLeft pt2) */
-/* Fim Main Mid Left */
+        #idTop #idBasicInformation .containerBasicInformation {
+            background-color: var(--Cor-Superficies_02);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--Cor-TextoPrincipal);
+            border-radius: .75rem;
+            margin-top: 5px;
+            font-family: "Inter";
+        }
 
-/* Main Mid Mid */
-#idMid #idMidMid {
-    width: 400px;
-    height: 100%;
-}
+        #idTop #idBasicInformation #idZengiaAtual {
+            font-size: 1.8rem;
+        }
 
-#idMid #idMidMid .containerMidMid {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
+        #idTop #idBasicInformation #idZPS {
+            font-size: .8rem;
+        }
+    /* Fim Main Top */
 
-#idMid #idMidMid #idMainButton {
-    width: 200px;
-    height: 60px;
-}
-/* Fim Main Mid Mid */
+    /* Main Mid */
+        #idMain #idMid {
+            width: 100%;
+            height: 480px;
+        }
 
-/* Main Mid Right */
-#idMid #idMidRight {
-    width: 400px;
-    height: 100%;
-}
+        #idMain #idMid .containerMid {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
 
-#idMid #idMidRight .containerMidRight {
-    width: 100%;
-    height: 100%;
-}
-/* Fim Main Mid Right */
+        /* Main Mid Left */
+            #idMid #idMidLeft {
+                width: 400px;
+                height: 100%;
+            }
 
-/* Fim Main Mid */
+            #idMid #idMidLeft .containerMidLeft {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
 
-/* Main Bot */
-#idMain #idBot {
-    width: 100%;
-    height: 120px;
-}
-/* Fim Main Bot */
+            /* Main Mid Left Bar (MenuBarLeft) */
+                #idMidLeft #idMenuBarLeft {
+                    width: 60px;
+                    height: 300px;
+                }
+
+                #idMidLeft #idMenuBarLeft .containerMenuBarLeft {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #idMidLeft #idMenuBarLeft .opcoesMenuBarLeft {
+                    background-color: var(--Cor-Superficies_03);
+                    width: 100%;
+                    height: 60px;
+                    border: 3px solid var(--Cor-Superficies_01);
+                }
+            /* Fim Main Mid Left Bar (MenuBarLeft) */
+
+            /* Main Mid Left Energias (MenuLeftEnergias) */
+                #idMid #idMidLeft #idMenuLeftEnergias  {
+                    width: 340px;
+                    height: 100%;
+                }
+                
+                #idMid #idMidLeft #idMenuLeftEnergias .containerMenuLeftEnergias {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                }
+
+                /* Main Mid Left Energias Conteudo */
+                    #idMidLeft #idMenuLeftEnergias #idConteudoEnergias {
+                        width: 300px;
+                        height: 100%;
+                    }
+
+                    #idMidLeft #idMenuLeftEnergias #idConteudoEnergias .containerConteudoEnergias {
+                        background-color: white; /* Mudar O WHITE */
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    /* Main Mid Left Energias Conteudo Filtros */
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasFiltros {
+                            width: 100%;
+                            height: 60px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasFiltros .containerConteudoEnergiasFiltros {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                        }
+
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonLeft {
+                            width: 30px;
+                            height: 100%;
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonLeft .containerEnergiasFiltrosButtonLeft {
+                            background-color: var(--Cor-Superficies_02);
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonLeft img {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros {
+                            width: 240px;
+                            height: 100%;
+                            display: flex;
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros .opcaoEnergiasFiltro {
+                            width: 60px;
+                            height: 100%;
+                            border: 3px solid var(--Cor-Superficies_03);
+                        }
+
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight {
+                            width: 30px;
+                            height: 100%;
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight .containerEnergiasFiltrosButtonRight {
+                            background-color: var(--Cor-Superficies_02);
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight img {
+                            width: 25px;
+                            height: 25px;
+                        }
+
+                    /* Fim Main Mid Left Energias Conteudo Filtros */
+
+                    /* Main Mid Left Energias Conteudo Title */
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasTitle {
+                            width: 100%;
+                            height: 50px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasTitle .containerConteudoEnergiasTitle {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasTitle #idConteudoEnergiasTitleText {
+                            font-family: "Inter";
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                        }
+                    /* Fim Main Mid Left Energias Conteudo Title */
+
+                    /* Main Mid Left Energias Conteudo Upgrades */
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades {
+                            width: 100%;
+                            height: 370px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .containerConteudoEnergiasUpgrades {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        
+                    /* Fim Main Mid Left Energias Conteudo Upgrades */
+                    
+                /* Fim Main Mid Left Energias Conteudo */
+
+                /* Main Mid Left Energias Fechar */
+                    #idMidLeft #idMenuLeftEnergias #idFecharEnergias {
+                        width: 40px;
+                        height: 100%;
+                    }
+
+                    #idMidLeft #idMenuLeftEnergias #idFecharEnergias .containerFecharEnergias {
+                        background-color: var(--Cor-Fundo_01);
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #idMidLeft #idMenuLeftEnergias #idFecharEnergias .iconsFechar {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                /* Fim Main Mid Left Energias Fechar */
+
+            /* Fim Main Mid Left Energias (MenuLeftEnergias) */
+        /* Fim Main Mid Left */
+
+        /* Main Mid Mid */
+            #idMid #idMidMid {
+                width: 400px;
+                height: 100%;
+            }
+
+            #idMid #idMidMid .containerMidMid {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            #idMid #idMidMid #idMainButton {
+                background-color: white; /* MUDAR O WHITE */
+                width: 200px;
+                height: 60px;
+            }
+        /* Fim Main Mid Mid */
+
+        /* Main Mid Right */
+            #idMid #idMidRight {
+                width: 400px;
+                height: 100%;
+            }
+
+            #idMid #idMidRight .containerMidRight {
+                width: 100%;
+                height: 100%;
+            }
+        /* Fim Main Mid Right */
+
+    /* Fim Main Mid */
+
+    /* Main Bot */
+        #idMain #idBot {
+            width: 100%;
+            height: 120px;
+        }
+    /* Fim Main Bot */
 
 /* Fim Main */
