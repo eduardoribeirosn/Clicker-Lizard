@@ -43,6 +43,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 
 #idTelaGame {
@@ -168,7 +169,7 @@ body {
 
             /* Main Mid Left Energias (MenuLeftEnergias) */
                 #idMid #idMidLeft #idMenuLeftEnergias  {
-                    width: 340px;
+                    width: 400px;
                     height: 100%;
                 }
                 
@@ -180,12 +181,12 @@ body {
 
                 /* Main Mid Left Energias Conteudo */
                     #idMidLeft #idMenuLeftEnergias #idConteudoEnergias {
-                        width: 300px;
+                        width: 360px;
                         height: 100%;
                     }
 
                     #idMidLeft #idMenuLeftEnergias #idConteudoEnergias .containerConteudoEnergias {
-                        background-color: white; /* Mudar O WHITE */
+                        background-color: var(--Cor-Superficies_02); /* Mudar O WHITE */
                         width: 100%;
                         height: 100%;
                     }
@@ -208,7 +209,8 @@ body {
                         }
                         
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonLeft .containerEnergiasFiltrosButtonLeft {
-                            background-color: var(--Cor-Superficies_02);
+                            background-color: var(--Cor-Fundo_01);
+                            border: solid 2px var(--Cor-Fundo_02);
                             width: 100%;
                             height: 100%;
                             display: flex;
@@ -223,7 +225,7 @@ body {
                         }
 
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros {
-                            width: 240px;
+                            width: 300px;
                             height: 100%;
                             display: flex;
                         }
@@ -231,7 +233,7 @@ body {
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros .opcaoEnergiasFiltro {
                             width: 60px;
                             height: 100%;
-                            border: 3px solid var(--Cor-Superficies_03);
+                            border: 3px solid var(--Cor-Fundo_01);
                         }
 
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight {
@@ -240,7 +242,8 @@ body {
                         }
                         
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight .containerEnergiasFiltrosButtonRight {
-                            background-color: var(--Cor-Superficies_02);
+                            background-color: var(--Cor-Fundo_01);
+                            border: solid 2px var(--Cor-Fundo_02);
                             width: 100%;
                             height: 100%;
                             display: flex;
@@ -281,16 +284,86 @@ body {
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades {
                             width: 100%;
                             height: 370px;
+                            overflow-y: auto;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades::-webkit-scrollbar {
+                            display: none;
                         }
 
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .containerConteudoEnergiasUpgrades {
                             width: 100%;
-                            height: 100%;
                             display: flex;
                             flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
                         }
 
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .opcaoEnergiasUpgrade {
+                            background-color: var(--Cor-Superficies_01);
+                            width: 90%;
+                            height: 50px;
+                            margin-top: 10px;
+                            margin-bottom: 5px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            border-radius: 0.2rem;
+                            font-family: "Inter";
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .levelUpgradeEnergias {
+                            /* background-color: var(--Cor-TextoPrincipal); */
+                            width: 50px;
+                            height: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                            border-radius: .5rem;
+                        }
                         
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .nameUpgradeEnergias {
+                            font-size: 1.25rem;
+                            font-weight: bold;
+                            width: 130px;
+                        }
+                        
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .costUpgradeEnergias {
+                            /* background-color: var(--Cor-TextoPrincipal); */
+                            width: 55px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            border-radius: .5rem;
+                            
+                        }
+                        
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .qtdUpgradeEnergias {
+                            background-color: var(--Cor-Principal_03);
+                            width: 45px;
+                            height: 45px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.15rem;
+                            font-weight: bold;
+                            border-radius: 1.5rem;
+                            cursor: pointer;
+                            user-select: none;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .qtdUpgradeEnergias:hover {
+                            transform: scale(1.05);
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .qtdUpgradeEnergias:active {
+                            transform: scale(1.15);
+                        }
                     /* Fim Main Mid Left Energias Conteudo Upgrades */
                     
                 /* Fim Main Mid Left Energias Conteudo */
