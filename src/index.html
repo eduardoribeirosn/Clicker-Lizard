@@ -10,7 +10,7 @@
 <body>
     <div id="idTelaGame">
         <section id="idHeader">
-            <span id="idTitleGame">Clicker Lizard</span>
+            <span id="idTitleGame">Clicker Lizens</span>
         </section>
         <section id="idMain">
             <div id="idTop">
@@ -34,8 +34,8 @@
                             <!-- Menu Botões -->
                             <div id="idMenuBarLeft" style="display: none;">
                                 <div class="containerMenuBarLeft">
-                                    <div class="opcoesMenuBarLeft" id="idOpcaoEnergias"></div>
-                                    <div class="opcoesMenuBarLeft"></div>
+                                    <div class="opcoesMenuBarLeft" id="idUpgradeEnergies"></div>
+                                    <div class="opcoesMenuBarLeft" id="idUnlockingTypesEnergy"></div>
                                     <div class="opcoesMenuBarLeft"></div>
                                     <div class="opcoesMenuBarLeft"></div>
                                     <div class="opcoesMenuBarLeft"></div>
@@ -55,8 +55,8 @@
                                                         </div>
                                                     </div>
                                                     <div id="idContainerEnergiasFiltros">
-                                                        <div class="opcaoEnergiasFiltro"></div>
-                                                        <div class="opcaoEnergiasFiltro"></div>
+                                                        <div class="opcaoEnergiasFiltro opcaoEnergiasFiltroSelecionado" id="idEnergiaFiltro_Zengia"></div>
+                                                        <div class="opcaoEnergiasFiltro" id="idEnergiaFiltro_ElementFire"></div>
                                                         <div class="opcaoEnergiasFiltro"></div>
                                                         <div class="opcaoEnergiasFiltro"></div>
                                                         <div class="opcaoEnergiasFiltro"></div>
@@ -71,22 +71,32 @@
                                             </div>
                                             <div id="idConteudoEnergiasTitle">
                                                 <div class="containerConteudoEnergiasTitle">
-                                                    <span id="idConteudoEnergiasTitleText">Upgrades</span>
+                                                    <span id="idConteudoEnergiasTitleText">Upgrades - Zengia</span>
                                                 </div>
                                             </div>
+                                            <!-- <div id="idConteudoEnergiasSubTitle">
+                                                <div class="containerConteudoEnergiasSubTitle">
+                                                    <div class="conteudoEnergiasSubTitles">
+                                                        <span class="subTitleConteudoEnergias subTitleLevel">Level</span>
+                                                        <span class="subTitleConteudoEnergias subTitleName">Descrição</span>
+                                                        <span class="subTitleConteudoEnergias subTitleCost">Custo</span>
+                                                        <span class="subTitleConteudoEnergias subTitleQtd">Upar</span>
+                                                    </div>
+                                                </div>
+                                            </div> -->
                                             <div id="idConteudoEnergiasUpgrades">
                                                 <div class="containerConteudoEnergiasUpgrades">
                                                     <div class="opcaoEnergiasUpgrade">
-                                                        <span class="levelUpgradeEnergias">5</span>
-                                                        <span class="nameUpgradeEnergias">Energia</span>
-                                                        <div class="costUpgradeEnergias">200K</div>
-                                                        <div class="qtdUpgradeEnergias">+100</div>
+                                                        <span class="levelUpgradeEnergias"><span id="idLvlUpGanhoPorClique">1</span></span>
+                                                        <span class="nameUpgradeEnergias">Ganho por Clique</span>
+                                                        <div class="costUpgradeEnergias"><span id="idCostGanhoPorClique">5</span></div>
+                                                        <div class="qtdUpgradeEnergias">+<span id="idQtdGanhoPorClique">1</span></div>
                                                     </div>
                                                     <div class="opcaoEnergiasUpgrade">
-                                                        <span class="levelUpgradeEnergias">2</span>
+                                                        <span class="levelUpgradeEnergias"><span id="idLvlUpGanhoPorClique">1</span></span>
                                                         <span class="nameUpgradeEnergias">Maquina</span>
-                                                        <div class="costUpgradeEnergias">500K</div>
-                                                        <div class="qtdUpgradeEnergias">+10</div>
+                                                        <div class="costUpgradeEnergias"><span id="idCostGanhoPorClique">500</span></div>
+                                                        <div class="qtdUpgradeEnergias">+<span id="idQtdGanhoPorClique">1</span></div>
                                                     </div>
                                                     <div class="opcaoEnergiasUpgrade"></div>
                                                     <div class="opcaoEnergiasUpgrade"></div>
@@ -98,7 +108,7 @@
                                     </div>
                                     <div id="idFecharEnergias">
                                         <div class="containerFecharEnergias">
-                                            <div class="iconsFechar">
+                                            <div class="iconsFechar" id="idCloseMenuLeft">
                                                 <img src="./assets/Chevrons left.png" alt="Icon to close the menu">
                                                 <img src="./assets/Chevrons left.png" alt="Icon to close the menu">
                                                 <img src="./assets/Chevrons left.png" alt="Icon to close the menu">
@@ -113,7 +123,7 @@
                         <div class="containerMidMid">
                             <div id="idMainButton">
                                 <div class="containerMainButton">
-
+                                    🔷
                                 </div>
                             </div>
                         </div>

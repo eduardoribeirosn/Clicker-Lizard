@@ -1,4 +1,5 @@
 :root {
+    /* Cores */
     --Cor-Fundo_01: #0b2525;
     --Cor-Fundo_02: #071a1a;
     --Cor-Superficies_01: #2a4f4f;
@@ -15,6 +16,11 @@
     --Cor-DouradoMistico_02: #FF7E67;
     --Cor-Desabilitado: #3A4A4A;
     --Cor-Erro: #FF4C4C;
+    --Cor-Bronze_01: #a1613f;
+    --Cor-Bronze_02: #f49d54;
+    --Cor-Bronze_03: #ffaa5c;
+
+    /* Variáveis */
 }
 
 @font-face {
@@ -164,6 +170,37 @@ body {
                     width: 100%;
                     height: 60px;
                     border: 3px solid var(--Cor-Superficies_01);
+                    cursor: pointer;
+                    background-image: url(./assets/Icon-Futuro_solo.png);
+                    background-size: contain;
+                    /* background-color: #00ffcc;
+                    color: #000;
+                    padding: 15px 30px;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 0 10px #00ffcc; */
+                }
+
+                #idMidLeft #idMenuBarLeft .opcoesMenuBarLeft:hover {
+                    box-shadow: 0 0 20px var(--Cor-Secundaria_01),
+                    0 0 40px var(--Cor-Secundaria_01),
+                    0 0 60px var(--Cor-Secundaria_01);
+                    transform: scale(1.05);
+                }
+
+                /* OPTION MENU BAR -> UPGRADE ENERGIES */
+                #idMidLeft #idMenuBarLeft #idUpgradeEnergies {
+                    background-image: url(./assets/Icon-UpgradingEnergies.jpg);
+                    background-size: contain;
+                }
+
+                /* OPTION MENU BAR -> UNLOCKING TYPES ENERGY */
+                #idMidLeft #idMenuBarLeft #idUnlockingTypesEnergy {
+                    background-image: url(./assets/Icon-UnlockingTypesEnergy.jpg);
+                    background-size: contain;
                 }
             /* Fim Main Mid Left Bar (MenuBarLeft) */
 
@@ -217,6 +254,7 @@ body {
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
+                            cursor: pointer;
                         }
                         
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonLeft img {
@@ -234,6 +272,26 @@ body {
                             width: 60px;
                             height: 100%;
                             border: 3px solid var(--Cor-Fundo_01);
+                            cursor: pointer;
+                            background-image: url(./assets/Icon-Futuro_solo.png);
+                            background-size: contain;
+                        }
+
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros .opcaoEnergiasFiltroSelecionado {
+                            border: 3px solid;
+                            border-image: linear-gradient(var(--Cor-Bronze_01), var(--Cor-Bronze_02), var(--Cor-Bronze_03)) 1;
+                            border-color: transparent;
+                            /* border: 3px solid var(--Cor-Secundaria_01); */
+                        }
+                        
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros .opcaoEnergiasFiltroSelecionado:hover {
+                            border: 4px solid;
+                            border-image: linear-gradient(var(--Cor-Bronze_03), var(--Cor-Bronze_02), var(--Cor-Bronze_01)) 1;
+                            /* border: 3px solid var(--Cor-Secundaria_01); */
+                        }
+
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros .opcaoEnergiasFiltroSelecionado:active {
+                            border: 6px solid;
                         }
 
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight {
@@ -250,11 +308,24 @@ body {
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
+                            cursor: pointer;
                         }
                         
                         #idConteudoEnergias #idConteudoEnergiasFiltros #idEnergiasFiltrosButtonRight img {
                             width: 25px;
                             height: 25px;
+                        }
+
+                        /* OPTION ENERGY FILTER - ZENGIA */
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros #idEnergiaFiltro_Zengia {
+                            background-image: url(./assets/Icon-Zengia_solo.png);
+                            background-size: contain;
+                        }
+
+                        /* OPTION ELEMENT FIRE FILTER - FIRE */
+                        #idConteudoEnergias #idConteudoEnergiasFiltros #idContainerEnergiasFiltros #idEnergiaFiltro_ElementFire {
+                            background-image: url(./assets/Icon-Bloqueado_solo.png);
+                            background-size: contain;
                         }
 
                     /* Fim Main Mid Left Energias Conteudo Filtros */
@@ -280,10 +351,54 @@ body {
                         }
                     /* Fim Main Mid Left Energias Conteudo Title */
 
+                    /* Main Mid Left Energia Conteudo SubTitle */
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle {
+                            width: 100%;
+                            height: 20px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .containerConteudoEnergiasSubTitle {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .conteudoEnergiasSubTitles {
+                            width: 90%;
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                        
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .subTitleConteudoEnergias {
+                            /* width: 100%; */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .subTitleLevel {
+                            width: 50px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .subTitleName {
+                            width: 160px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .subTitleCost {
+                            width: 55px;
+                        }
+
+                        #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasSubTitle .subTitleQtd {
+                            width: 45px;
+                        }
+
+                    /* Fim Main Mid Left Energia Conteudo SubTitle */
+
                     /* Main Mid Left Energias Conteudo Upgrades */
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades {
                             width: 100%;
-                            height: 370px;
+                            height: 350px;
                             overflow-y: auto;
                         }
 
@@ -325,9 +440,9 @@ body {
                         }
                         
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .nameUpgradeEnergias {
-                            font-size: 1.25rem;
+                            font-size: 0.8rem;
                             font-weight: bold;
-                            width: 130px;
+                            width: 160px;
                         }
                         
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .costUpgradeEnergias {
@@ -386,6 +501,7 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
+                        cursor: pointer;
                     }
                 /* Fim Main Mid Left Energias Fechar */
 
@@ -408,10 +524,54 @@ body {
             }
 
             #idMid #idMidMid #idMainButton {
-                background-color: white; /* MUDAR O WHITE */
-                width: 200px;
-                height: 60px;
+                background: radial-gradient(
+                var(--Cor-Principal_03) 40%,
+                var(--Cor-Superficies_01) 75%
+                );
+                width: 100px;
+                height: 100px;
+                border-radius: 4rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                user-select: none;
             }
+
+            #idMid #idMidMid #idMainButton:hover {
+                transform: scale(1.05);
+            }
+
+            #idMid #idMidMid #idMainButton:active {
+                transform: scale(1.15);
+            }
+
+            /* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+            /* Essa classe será adicionada ao número pelo JavaScript */
+            .numero-flutuante {
+                position: fixed; /* Fixa na tela para não quebrar o seu layout */
+                color: #48ffff; /* A sua cor neon */
+                font-weight: bold;
+                font-size: 24px;
+                pointer-events: none; /* Impede que o número bloqueie novos cliques no botão */
+                
+                /* Configura a animação: nome, duração, curva de velocidade e direção */
+                animation: subirESumir 1s ease-out forwards; 
+            }
+            
+            /* O que a animação faz */
+            @keyframes subirESumir {
+                0% {
+                    opacity: 1; /* Totalmente visível */
+                    transform: translateY(0) scale(1); /* Posição original */
+                }
+                100% {
+                    opacity: 0; /* Invisível */
+                    transform: translateY(-80px) scale(1.2); /* Sobe 80px e cresce um pouco */
+                }
+            }
+            /* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
         /* Fim Main Mid Mid */
 
         /* Main Mid Right */
