@@ -1,0 +1,6 @@
+Transformei para Grid, coloquei o Item
+
+Para próximos passos:
+
+fazer o item pulsar, girar...
+e aparecer ele quando comprar o Upgrade...
