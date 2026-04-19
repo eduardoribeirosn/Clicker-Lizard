@@ -79,8 +79,10 @@ body {
 /* Fim Header */
 /* Main */
     #idTelaGame #idMain {
+        background-image: url(./assets/FundoGame.png);
+        background-size: contain;
         width: 100%;
-        height: 720px;
+        height: 740px;
         display: flex;
         flex-direction: column;
     }
@@ -601,7 +603,7 @@ body {
     /* Main Bot */
         #idMain #idBot {
             width: 100%;
-            height: 120px;
+            height: 140px;
         }
     /* Fim Main Bot */
 
