@@ -2,6 +2,7 @@
 export let zengiaAtual = 0;
 export let zengiaQtdAdd = 0.2;
 
+import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/aumuletoAntigoUpgrade.js";
 // Imports -> Todos
 import { addZengiaManual, attTelaZengia } from "./JS/Energias/Zengia/zengiaBase.js"
 import { uparZengiaBase } from "./JS/Energias/Zengia/zengiaUpgrade.js";
@@ -73,6 +74,8 @@ function botoesDaTelaGame() {
     // Zengia
     // Botão para Upar Zengia
     document.getElementById('idUparGanhoPorCliqueZengia').addEventListener('click', uparZengiaBase)
+    // Botão para Upar Amuleto Antigo
+    document.getElementById('idUparAmuletoAntigo').addEventListener('click', uparAmuletoAntigo)
 }
 
 // Getters e Setters das variáveis globais
@@ -84,6 +87,11 @@ export function setZengiaAtual(newValueZengia) {
     let valueAuxiliar = Math.round(newValueZengia * 100) / 100
     zengiaAtual = valueAuxiliar
     attTelaZengia()
+}
+
+// USADA PARA TESTESSSS
+window.setZengiaGlobal = function (novoValor) {
+    setZengiaAtual(novoValor);
 }
 
 // Quantidade Ganha por Click -> Zengia

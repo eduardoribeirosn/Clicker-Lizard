@@ -1,11 +1,11 @@
 import { getZengiaAtual, setZengiaAtual } from "../../../../script.js";
 
 // Variaveis do Item
-let zengiaQtdAdd_amuletoAntigo = 5;
+let amuletoAntigoQtdAdd = 0;
 
-export function addZengia_amuletoAntigo() {
+export function addAmuletoAntigoQtdAdd() {
     // Valor Ganho
-    let valueAuxiliar = getZengiaAtual() + getZengiaQtd_amuletoAntigo();
+    let valueAuxiliar = getZengiaAtual() + getAmuletoAntigoQtdAdd();
     // -----
     // Deixar valor arredondado
     valueAuxiliar = Math.round(valueAuxiliar * 100) / 100
@@ -13,10 +13,10 @@ export function addZengia_amuletoAntigo() {
     setZengiaAtual(valueAuxiliar)
 }
 
-export function getZengiaQtd_amuletoAntigo() {
-    return zengiaQtdAdd_amuletoAntigo;
+export function getAmuletoAntigoQtdAdd() {
+    return amuletoAntigoQtdAdd;
 }
 
-export function setZengiaQtd_amuletoAntigo(newZengiaQtdAdd_amuletoAntigo) {
-    zengiaQtdAdd_amuletoAntigo = newZengiaQtdAdd_amuletoAntigo;
+export function setAmuletoAntigoQtdAdd(newAmuletoAntigoQtdAdd) {
+    amuletoAntigoQtdAdd = newAmuletoAntigoQtdAdd;
 }

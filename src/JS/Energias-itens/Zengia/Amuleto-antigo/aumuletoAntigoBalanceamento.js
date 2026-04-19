@@ -1,4 +1,4 @@
-import { getZengiaQtd_amuletoAntigo, setZengiaQtd_amuletoAntigo } from "./aumuletoAntigo.js";
+import { getAmuletoAntigoQtdAdd, setAmuletoAntigoQtdAdd } from "./aumuletoAntigo.js";
 
 let amuletoAntigoLevel = 0;
 let amuletoAntigoCustoUpgrade = 50;
@@ -17,7 +17,7 @@ export function attPriceAmuletoAntigoUpgrade() {
 
 export function attQtdAddAmuletoAntigoUpgrade() {
     if (getAmuletoAntigoLevel() < 10) {
-        setZengiaQtd_amuletoAntigo(getZengiaQtd_amuletoAntigo() + 5.0)
+        setAmuletoAntigoQtdAdd(getAmuletoAntigoQtdAdd() + 5.0)
     }
 }
 
