@@ -13,6 +13,10 @@ export function uparAmuletoAntigo() {
     } else {
         console.log('Sem Zengia suficiente - Amuleto')
     }
+
+    if (getAmuletoAntigoLevel() > 0) {
+        document.getElementById('idUpgradeTempo-AmuletoAntigo').style.display = "flex";
+    }
 }
 
 // Verifica se o Player tem Zengia o suficiente

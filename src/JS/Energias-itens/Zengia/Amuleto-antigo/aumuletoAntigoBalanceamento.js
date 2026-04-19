@@ -4,11 +4,11 @@ let amuletoAntigoLevel = 0;
 let amuletoAntigoCustoUpgrade = 50;
 
 export function attPriceAmuletoAntigoUpgrade() {
-    let atualAmuletoAntigoLevel = getAmuletoAntigoCustoUpgrade()
+    let atualAmuletoAntigoLevel = getAmuletoAntigoLevel()
     if (atualAmuletoAntigoLevel == 0) {
         setAmuletoAntigoCustoUpgrade(50)
     } else if (atualAmuletoAntigoLevel < 10) {
-        setAmuletoAntigoCustoUpgrade(getAmuletoAntigoLevel() * 50)
+        setAmuletoAntigoCustoUpgrade((getAmuletoAntigoLevel() + 1) * 50)
     } else {
         setAmuletoAntigoCustoUpgrade(getAmuletoAntigoLevel() * 100)
     }

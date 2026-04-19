@@ -17,7 +17,7 @@ export function attPriceZengiaUpgrade() {
 
 export function attQtdAddZengiaUpgrade() {
     if (getZengiaLevel() < 10) {
-        setZengiaQtdAdd(getZengiaQtdAdd() + 0.2);
+        setZengiaQtdAdd(getZengiaQtdAdd() + 0.3);
     }
 }
 

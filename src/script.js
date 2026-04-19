@@ -2,8 +2,9 @@
 export let zengiaAtual = 0;
 export let zengiaQtdAdd = 0.2;
 
-import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/aumuletoAntigoUpgrade.js";
 // Imports -> Todos
+import { uparAmuletoAntigo_Tempo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/Amuleto-antigo_Tempo/amuletoAntigo_tempoUpgrade.js";
+import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/aumuletoAntigoUpgrade.js";
 import { addZengiaManual, attTelaZengia } from "./JS/Energias/Zengia/zengiaBase.js"
 import { uparZengiaBase } from "./JS/Energias/Zengia/zengiaUpgrade.js";
 
@@ -76,6 +77,8 @@ function botoesDaTelaGame() {
     document.getElementById('idUparGanhoPorCliqueZengia').addEventListener('click', uparZengiaBase)
     // Botão para Upar Amuleto Antigo
     document.getElementById('idUparAmuletoAntigo').addEventListener('click', uparAmuletoAntigo)
+    // Botão para Upar Amuleto Antigo Tempo
+    document.getElementById('idUparAmuletoAntigoTempo').addEventListener('click', uparAmuletoAntigo_Tempo)
 }
 
 // Getters e Setters das variáveis globais

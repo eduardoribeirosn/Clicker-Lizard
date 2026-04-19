@@ -466,6 +466,7 @@ body {
                         
                         #idMidLeft #idMenuLeftEnergias #idConteudoEnergias #idConteudoEnergiasUpgrades .qtdUpgradeEnergias {
                             background-color: var(--Cor-Principal_03);
+                            /* background-color: var(--Cor-Desabilitado); */
                             width: 45px;
                             height: 45px;
                             display: flex;
