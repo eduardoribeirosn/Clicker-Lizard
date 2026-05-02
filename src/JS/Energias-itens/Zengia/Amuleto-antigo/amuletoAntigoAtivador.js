@@ -7,11 +7,17 @@ let amuletoAntigoFuncionando;
 export function ativarAmuletoAntigo() {
     if (getAmuletoAntigoLevel() >= 1) {
         desativarAmuletoAntigo()
+        trocarImgAnimation()
         amuletoAntigoFuncionando = setInterval(() => {
             addAmuletoAntigoQtdAdd()
             console.log(getAmuletoAntigo_TempoDemorado())
         }, getAmuletoAntigo_TempoDemorado())
     }
+}
+
+function trocarImgAnimation() {
+    document.getElementById('idItemAmuletoAntigo').style.backgroundImage = 'url(./assets/Maquinas-Itens/AmuletoAntigo.png)'
+    document.getElementById('idItemAmuletoAntigo').classList.add('itemPulsar')
 }
 
 export function desativarAmuletoAntigo() {

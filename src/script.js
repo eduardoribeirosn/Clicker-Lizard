@@ -81,6 +81,39 @@ function botoesDaTelaGame() {
     document.getElementById('idUparAmuletoAntigoTempo').addEventListener('click', uparAmuletoAntigo_Tempo)
 }
 
+// Animação dos números para itens e outros...
+export function numerosAnimado(itemLocal, getItemValorFunction) {
+    // 1. Criar o elemento HTML do zero
+    const textoFlutuante = document.createElement('span');
+    textoFlutuante.classList.add('numero-flutuante');
+    let valueAuxiliar = Math.round(getItemValorFunction() * 100) / 100
+    textoFlutuante.innerText = `+${valueAuxiliar}`; // Ou o valor do seu poder de clique
+
+    // 2. Pegar a posição do mouse no momento do clique
+    // Subtraímos um pouco para centralizar o texto no ponteiro do mouse
+    // const eixoX = itemLocal.clientX - 10; 
+    // const eixoY = itemLocal.clientY - 15; 
+    const rect = itemLocal.getBoundingClientRect();
+    const eixoX = rect.left + rect.width / 2; 
+    const eixoY = rect.top + rect.height / 2; 
+    // const gridY = itemLocal.grid-row 
+    
+    // 3. Posicionar o texto exatamente onde o mouse clicou
+    textoFlutuante.style.left = `${eixoX}px`;
+    textoFlutuante.style.top = `${eixoY}px`;
+
+    // 4. Jogar o texto na tela
+    document.getElementById('idMidMid').querySelector('.containerMidMid').appendChild(textoFlutuante)
+    // document.body.appendChild(textoFlutuante);
+
+    // 5. A Limpeza (Obrigatório!)
+    // Remove o elemento do HTML após 1 segundo (tempo exato da animação do CSS)
+    setTimeout(() => {
+        textoFlutuante.remove();
+    }, 1000); 
+}
+
+
 // Getters e Setters das variáveis globais
 // Zengia Atual
 export function getZengiaAtual() {

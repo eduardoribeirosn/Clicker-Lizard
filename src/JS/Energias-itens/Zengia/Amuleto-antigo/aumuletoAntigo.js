@@ -1,4 +1,4 @@
-import { getZengiaAtual, setZengiaAtual } from "../../../../script.js";
+import { getZengiaAtual, numerosAnimado, setZengiaAtual } from "../../../../script.js";
 
 // Variaveis do Item
 let amuletoAntigoQtdAdd = 0;
@@ -6,6 +6,7 @@ let amuletoAntigoQtdAdd = 0;
 export function addAmuletoAntigoQtdAdd() {
     // Valor Ganho
     let valueAuxiliar = getZengiaAtual() + getAmuletoAntigoQtdAdd();
+    numerosAnimado(document.getElementById('idItemAmuletoAntigo'), getAmuletoAntigoQtdAdd)
     // -----
     // Deixar valor arredondado
     valueAuxiliar = Math.round(valueAuxiliar * 100) / 100
