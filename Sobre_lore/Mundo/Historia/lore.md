@@ -1,0 +1,3 @@
+# História -> Lore...
+
+Há anos atrás o mundo continha muitas pessoas com diferentes dominações de diferentes Zengias.. algumas regiões viviam mais tranquilamente e outras viviam em guerra, porém após uma guerra mundial a maioria dos locais foram destruidos e o mal venceu... porém o "jogador" é um sobrevivente que tem que acumular energia para conseguir trazer a paz para este mundo.
