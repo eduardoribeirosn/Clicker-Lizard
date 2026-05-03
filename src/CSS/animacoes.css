@@ -16,3 +16,29 @@
 .itemPulsar {
     animation: itemPulsar 2s ease-in-out infinite;
 }
+
+/* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+/* Essa classe será adicionada ao número pelo JavaScript */
+.numero-flutuante {
+    position: fixed; /* Fixa na tela para não quebrar o seu layout */
+    color: #48ffff; /* A sua cor neon */
+    font-weight: bold;
+    font-size: 24px;
+    pointer-events: none; /* Impede que o número bloqueie novos cliques no botão */
+    
+    /* Configura a animação: nome, duração, curva de velocidade e direção */
+    animation: subirESumir 1s ease-out forwards; 
+}
+
+/* O que a animação faz */
+@keyframes subirESumir {
+    0% {
+        opacity: 1; /* Totalmente visível */
+        transform: translateY(0) scale(1); /* Posição original */
+    }
+    100% {
+        opacity: 0; /* Invisível */
+        transform: translateY(-80px) scale(1.2); /* Sobe 80px e cresce um pouco */
+    }
+}
+/* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */

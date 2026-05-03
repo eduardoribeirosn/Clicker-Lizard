@@ -1,4 +1,6 @@
 # Amuleto Antigo -> Lore...
 
 (Ainda não sei direito)...
-[[Amuleto-Antigo]] passado de geração em geração por uma Familia. Acumulado de muita Zengia, este item foi passado ao Jogador na guerra por um amigo dele que era da Familia que tinha a posse do [[Amuleto-Antigo]].
+[[Amuleto-Antigo]] passado de geração em geração por uma Familia. Acumulado de muita [[Zengia]], este item foi passado ao [[Jogador]] na guerra por um amigo dele que era da Familia que tinha a posse do [[Amuleto-Antigo]].
+
+"Amuleto passado de geração em geração, que leva o [[Jogador]] a um local onde conhecerá outros itens com [[Zengia]] e que precisam de um certo nível de [[Zengia]] para serem manipulados."

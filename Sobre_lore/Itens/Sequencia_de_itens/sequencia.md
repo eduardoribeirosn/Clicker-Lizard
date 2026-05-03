@@ -6,7 +6,7 @@
 
 2. [[Totem-Medidor]]:
 
-    Totem que os membros do local (Templo), utilizavam para medir seu poder, com a constante medição de poder, o [[Totem-Medidor]] foi acumulando [[Zengia]] e com a manipulação certa pode ajudar o [[Jogador]] pode gerar mais [[Zengia]].
+    Totem que os membros do local (Templo), utilizavam para medir seu poder. Com a constante medição de poder, o [[Totem-Medidor]] foi acumulando [[Zengia]] e com a manipulação certa pode ajudar o [[Jogador]] a gerar mais [[Zengia]].
 
 3. [[Bacia-da-Recuperação]]:
 

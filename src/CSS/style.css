@@ -565,6 +565,7 @@ body {
                 0 0 30px var(--Cor-Secundaria_01);
             }
 
+            /* Item - Amuleto Antigo */
             #idMid #idMidMid #idItemAmuletoAntigo {
                 background-image: url(../assets/Maquinas-Itens/AmuletoAntigo_Bloqueado.png);
                 background-size: cover;
@@ -574,31 +575,16 @@ body {
                 grid-column: 5;
             }
 
-            /* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
-            /* Essa classe será adicionada ao número pelo JavaScript */
-            .numero-flutuante {
-                position: fixed; /* Fixa na tela para não quebrar o seu layout */
-                color: #48ffff; /* A sua cor neon */
-                font-weight: bold;
-                font-size: 24px;
-                pointer-events: none; /* Impede que o número bloqueie novos cliques no botão */
-                
-                /* Configura a animação: nome, duração, curva de velocidade e direção */
-                animation: subirESumir 1s ease-out forwards; 
+            /* Item - Totem Medidor */
+            #idMid #idMidMid #idItemTotemMedidor {
+                background-image: url(../assets/Maquinas-Itens/TotemMedidor_Bloqueado.png);
+                background-size: cover;
+                width: 60px;
+                height: 100px;
+                grid-row: 3;
+                grid-column: 16;
             }
-            
-            /* O que a animação faz */
-            @keyframes subirESumir {
-                0% {
-                    opacity: 1; /* Totalmente visível */
-                    transform: translateY(0) scale(1); /* Posição original */
-                }
-                100% {
-                    opacity: 0; /* Invisível */
-                    transform: translateY(-80px) scale(1.2); /* Sobe 80px e cresce um pouco */
-                }
-            }
-            /* SLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
         /* Fim Main Mid Mid */
 
         /* Main Mid Right */
