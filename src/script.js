@@ -5,6 +5,7 @@ export let zengiaQtdAdd = 0.2;
 // Imports -> Todos
 import { uparAmuletoAntigo_Tempo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/Amuleto-antigo_Tempo/amuletoAntigo_tempoUpgrade.js";
 import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/aumuletoAntigoUpgrade.js";
+import { uparTotemMedidor } from "./JS/Energias-itens/Zengia/Totem-medidor/totemMedidorUpgrade.js";
 import { addZengiaManual, attTelaZengia } from "./JS/Energias/Zengia/zengiaBase.js"
 import { uparZengiaBase } from "./JS/Energias/Zengia/zengiaUpgrade.js";
 
@@ -79,6 +80,8 @@ function botoesDaTelaGame() {
     document.getElementById('idUparAmuletoAntigo').addEventListener('click', uparAmuletoAntigo)
     // Botão para Upar Amuleto Antigo Tempo
     document.getElementById('idUparAmuletoAntigoTempo').addEventListener('click', uparAmuletoAntigo_Tempo)
+    // Botão para Upar Totem Medidor
+    document.getElementById('idUparTotemMedidor').addEventListener('click', uparTotemMedidor)
 }
 
 // Animação dos números para itens e outros...
