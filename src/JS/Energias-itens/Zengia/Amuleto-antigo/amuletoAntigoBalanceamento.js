@@ -1,4 +1,4 @@
-import { getAmuletoAntigoQtdAdd, setAmuletoAntigoQtdAdd } from "./aumuletoAntigo.js";
+import { getAmuletoAntigoQtdAdd, setAmuletoAntigoQtdAdd } from "./amuletoAntigo.js";
 
 let amuletoAntigoLevel = 0;
 let amuletoAntigoCustoUpgrade = 50;

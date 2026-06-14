@@ -1,5 +1,5 @@
 import { getZengiaAtual, setZengiaAtual } from "../../../../script.js"
-import { getAmuletoAntigoLevel } from "../Amuleto-antigo/aumuletoAntigoBalanceamento.js"
+import { getAmuletoAntigoLevel } from "../Amuleto-antigo/amuletoAntigoBalanceamento.js"
 import { ativarTotemMedidor } from "./totemMedidorAtivador.js"
 import { attPriceTotemMedidorUpgrade, attQtdAddTotemMedidorUpgrade, getTotemMedidorCustoUpgrade, getTotemMedidorLevel, setTotemMedidorLevel } from "./totemMedidorBalanceamento.js"
 

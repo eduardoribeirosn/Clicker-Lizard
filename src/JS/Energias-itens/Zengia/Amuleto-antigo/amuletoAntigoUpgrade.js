@@ -1,6 +1,6 @@
 import { getZengiaAtual, setZengiaAtual } from "../../../../script.js";
 import { ativarAmuletoAntigo } from "./amuletoAntigoAtivador.js";
-import { attPriceAmuletoAntigoUpgrade, attQtdAddAmuletoAntigoUpgrade, getAmuletoAntigoLevel, getAmuletoAntigoCustoUpgrade, setAmuletoAntigoLevel } from "./aumuletoAntigoBalanceamento.js";
+import { attPriceAmuletoAntigoUpgrade, attQtdAddAmuletoAntigoUpgrade, getAmuletoAntigoLevel, getAmuletoAntigoCustoUpgrade, setAmuletoAntigoLevel } from "./amuletoAntigoBalanceamento.js";
 
 // Upar Amuleto Antigo - Automático
 export function uparAmuletoAntigo() {

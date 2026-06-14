@@ -1,6 +1,6 @@
 import { getAmuletoAntigo_TempoDemorado } from "./Amuleto-antigo_Tempo/amuletoAntigo_TempoBalanceamento.js";
-import { addAmuletoAntigoQtdAdd } from "./aumuletoAntigo.js";
-import { getAmuletoAntigoLevel } from "./aumuletoAntigoBalanceamento.js";
+import { addAmuletoAntigoQtdAdd } from "./amuletoAntigo.js";
+import { getAmuletoAntigoLevel } from "./amuletoAntigoBalanceamento.js";
 
 let amuletoAntigoFuncionando;
 

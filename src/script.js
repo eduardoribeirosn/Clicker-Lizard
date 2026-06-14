@@ -4,7 +4,7 @@ export let zengiaQtdAdd = 0.2;
 
 // Imports -> Todos
 import { uparAmuletoAntigo_Tempo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/Amuleto-antigo_Tempo/amuletoAntigo_tempoUpgrade.js";
-import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/aumuletoAntigoUpgrade.js";
+import { uparAmuletoAntigo } from "./JS/Energias-itens/Zengia/Amuleto-antigo/amuletoAntigoUpgrade.js";
 import { uparTotemMedidor } from "./JS/Energias-itens/Zengia/Totem-medidor/totemMedidorUpgrade.js";
 import { addZengiaManual, attTelaZengia } from "./JS/Energias/Zengia/zengiaBase.js"
 import { uparZengiaBase } from "./JS/Energias/Zengia/zengiaUpgrade.js";
